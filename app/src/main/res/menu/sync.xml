@@ -1,0 +1,9 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SyncActivity" >
+
+    <item android:id="@+id/action_change"
+          android:title="@string/action_sync"
+          android:showAsAction="always" />
+ </menu>

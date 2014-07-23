@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiniSync</string>
+    <string name="test">Wa-pa-pa-pa-pa-pa-pow!\nWa-pa-pa-pa-pa-pa-pow!\nWa-pa-pa-pa-pa-pa-pow!</string>
+    <string name="action_sync">sync</string>
+    <string name="account_type">com.twitter.university.android.minisync.ACCOUNT</string>
+
+</resources>
