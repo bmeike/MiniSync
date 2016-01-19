@@ -11,6 +11,8 @@ import android.view.MenuItem;
 
 
 public class SyncActivity extends Activity {
+    private static final String TAG = "ACT";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class SyncActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_change) {
-            Log.d("ACT", "sync");
+            Log.d(TAG, "sync");
             getContentResolver().notifyChange(SyncProvider.URI, null, true);
             return true;
         }

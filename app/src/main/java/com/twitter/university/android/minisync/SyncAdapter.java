@@ -12,7 +12,9 @@ import android.os.Bundle;
 import android.util.Log;
 
 
-public class SyncAdapter extends AbstractThreadedSyncAdapter {
+class SyncAdapter extends AbstractThreadedSyncAdapter {
+    private static final String TAG = "SYNC";
+
 
     public SyncAdapter(Context context, boolean autoInitialize) {
         super(context, autoInitialize);
@@ -26,6 +28,6 @@ public class SyncAdapter extends AbstractThreadedSyncAdapter {
         ContentProviderClient contentProviderClient,
         SyncResult syncResult)
     {
-        Log.d("SYNC", "sync: " + account);
+        Log.d(TAG, "sync: " + account);
     }
 }
