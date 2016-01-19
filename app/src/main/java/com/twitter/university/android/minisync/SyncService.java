@@ -12,12 +12,18 @@ import android.util.Log;
 public class SyncService extends Service {
     private static final String ACTION_BIND_SYNC = "android.content.SyncAdapter";
 
-    private volatile SyncAdapter syncAdapter;
+    private static volatile SyncAdapter syncAdapter;
+
+    private static final Object syncAdapterLock = new Object();
 
     @Override
     public void onCreate() {
         super.onCreate();
-        syncAdapter = new SyncAdapter(getApplication(), true);
+        synchronized (syncAdapterLock) {
+            if (syncAdapter == null) {
+                syncAdapter = new SyncAdapter(getApplicationContext(), true);
+            }
+        }
     }
 
     @Override
