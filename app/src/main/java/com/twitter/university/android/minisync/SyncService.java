@@ -14,23 +14,15 @@ public class SyncService extends Service {
 
     private static final String ACTION_BIND_SYNC = "android.content.SyncAdapter";
 
-    private static SyncAdapter syncAdapter;
-
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        if (syncAdapter == null) {
-            syncAdapter = new SyncAdapter(getApplicationContext(), true);
-        }
-    }
 
     @Override
     public IBinder onBind(Intent intent) {
         Log.d(TAG, "bind: " + intent);
+
         if (ACTION_BIND_SYNC.equals(intent.getAction())) {
-            return syncAdapter.getSyncAdapterBinder();
+            return new SyncAdapter(getApplicationContext(), true).getSyncAdapterBinder();
         }
+
         return null;
     }
 }

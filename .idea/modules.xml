@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MiniSync.iml" filepath="$PROJECT_DIR$/MiniSync.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file:///Volumes/Home/Users/blake/Desktop/MiniSync/MiniSync.iml" filepath="/Volumes/Home/Users/blake/Desktop/MiniSync/MiniSync.iml" />
+      <module fileurl="file:///Volumes/Home/Users/blake/Desktop/MiniSync/app/app.iml" filepath="/Volumes/Home/Users/blake/Desktop/MiniSync/app/app.iml" />
     </modules>
   </component>
 </project>
-

@@ -7,12 +7,17 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="/Volumes/Home/Users/blake/Desktop/MiniSync" />
+            <option value="/Volumes/Home/Users/blake/Desktop/MiniSync/app" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="/Volumes/Home/Users/blake/Desktop/MiniSync" />
+            <option value="/Volumes/Home/Users/blake/Desktop/MiniSync/app" />
           </set>
         </option>
       </GradleProjectSettings>
     </option>
   </component>
 </project>
-
